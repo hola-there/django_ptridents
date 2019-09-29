@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,24 +11,25 @@
     <meta name="description" content="">
 
     <title>{% block title %}Home{% endblock %}</title>
-    <link rel="stylesheet" href="assets/icon54/style.css">
-    <link rel="stylesheet" href="assets/icon54-v3/style.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
-    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-    <link rel="stylesheet" href="assets/tether/tether.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="assets/soundcloud-plugin/style.css">
-    <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
-    <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.theme.css">
-    <link rel="stylesheet" href="assets/dropdown/css/style.css">
-    <link rel="stylesheet" href="assets/socicon/css/styles.css">
-    <link rel="stylesheet" href="assets/theme/css/style.css">
-    <link rel="stylesheet" href="assets/formoid/recaptcha.css">
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="{% static "assets/icon54/style.css" %}">
+    <link rel="stylesheet" href="{% static "assets/icon54-v3/style.css" %}">
+    <link rel="stylesheet" href="{% static "assets/font-awesome/css/font-awesome.css" %}">
+    <link rel="stylesheet" href="{% static "assets/bootstrap-material-design-font/css/material.css" %}">
+    <link rel="stylesheet" href="{% static "assets/web/assets/mobirise-icons/mobirise-icons.css" %}">
+    <link rel="stylesheet" href="{% static "assets/web/assets/mobirise-icons2/mobirise2.css" %}">
+    <link rel="stylesheet" href="{% static "assets/tether/tether.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/bootstrap/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/bootstrap/css/bootstrap-grid.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/bootstrap/css/bootstrap-reboot.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/soundcloud-plugin/style.css" %}">
+    <link rel="stylesheet" href="{% static "assets/formstyler/jquery.formstyler.css" %}">
+    <link rel="stylesheet" href="{% static "assets/formstyler/jquery.formstyler.theme.css" %}">
+    <link rel="stylesheet" href="{% static "assets/dropdown/css/style.css" %}">
+    <link rel="stylesheet" href="{% static "assets/socicon/css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "assets/theme/css/style.css" %}">
+    <link rel="stylesheet" href="{% static "assets/formoid/recaptcha.css" %}">
+    <link rel="stylesheet" href="{% static "assets/mobirise/css/mbr-additional.css" %}" type="text/css">
+    {% block headAdditions %}{% endblock %}
   </head>
   <body>
     {% block navbar %}
@@ -50,9 +52,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-secondary display-4" href="https://mobirise.com" aria-expanded="false">
-                          HOME</a></li><li class="nav-item"><a class="nav-link link text-secondary display-4" href="https://mobirise.com" aria-expanded="false">
+                          HOME</a></li><li class="nav-item"><a class="nav-link link text-secondary display-4" href="#" aria-expanded="false">
                           CONTACT US</a></li>
-                  <li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle text-secondary display-4" href="https://mobirise.com" aria-expanded="true" data-toggle="dropdown-submenu">
+                  <li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle text-secondary display-4" href="#" aria-expanded="true" data-toggle="dropdown-submenu">
                           OTHER LINKS</a>
                       <div class="dropdown-menu">
                           <a class="dropdown-item text-secondary display-4" href="index.html#clients01-6u" aria-expanded="false">Vendors Involved</a>
@@ -186,7 +188,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-4 m-auto align-center">
-                    <img src="assets/images/clear-enclosure-with-logo-592x444.png" alt="Mobirise" title="">
+                    <img src="{% static "assets/images/clear-enclosure-with-logo-592x444.png" %}" alt="Enclourse with Sensor & Parts Logos" title="">
                 </div>
                 <div class="col-12 col-md-12 col-lg-8">
                     <div class="row justify-content-center">
@@ -203,7 +205,7 @@
                         </div>
                         <div class="card p-3 col-12 col-md-8 col-lg-6">
                             <div class="card-img pt-1">
-                                <img class="img2 " src="assets/images/osi-32x32.png" alt="" title="">
+                                <img class="img2 " src="{% static "assets/images/osi-32x32.png" %}" alt="" title="">
                             </div>
                             <div class="card-box">
                                 <h4 class="card-title align-left py-2 mbr-fonts-style display-5">Open Source Options</h4>
@@ -291,7 +293,7 @@
                       </div>
                   </div>
                   <div class="col-lg-6 col-md-12 align-center">
-                      <img src="assets/images/jim-gade-ckjxgyfndqc-unsplash-864x648.jpg" alt="Mobirise" title="">
+                      <img src="{% static "assets/images/jim-gade-ckjxgyfndqc-unsplash-864x648.jpg" %}" alt="First Flooding Image" title="">
                   </div>
               </div>
           </div>
@@ -317,7 +319,7 @@
                     <div class="panel-item p-3">
                         <div class="card-block">
                             <div class="testimonial-photo">
-                                <img src="assets/images/img-1581-270x270.jpg" alt="" title="">
+                                <img src="{% static "assets/images/img-1581-270x270.jpg" %}" alt="Elijah&#39;s Bitmoji" title="">
                             </div>
                         </div>
                         <div class="card-footer">
@@ -337,7 +339,7 @@
                     <div class="panel-item p-3">
                         <div class="card-block">
                             <div class="testimonial-photo">
-                                <img src="assets/images/blazerola-270x270.png" alt="" title="">
+                                <img src="{% static "assets/images/blazerola-270x270.png" %}" alt="Ola&#39;s Bitmoji" title="">
                             </div>
                         </div>
                         <div class="card-footer">
@@ -372,7 +374,7 @@
                     <div class="panel-item p-3">
                         <div class="card-block">
                             <div class="testimonial-photo">
-                                <img src="assets/images/cyrus-270x270.png" alt="" title="">
+                                <img src="{% static "assets/images/cyrus-270x270.png" %}" alt="Cyrus&#39;s Bitmoji" title="">
                             </div>
                         </div>
                         <div class="card-footer">
@@ -395,7 +397,7 @@
                     <div class="panel-item p-3">
                         <div class="card-block">
                             <div class="testimonial-photo">
-                                <img src="assets/images/brett-300px-1-270x270.png" alt="" title="">
+                                <img src="{% static "assets/images/brett-300px-1-270x270.png" %}" alt="Brett&#39;s Bitmoji" title="">
                             </div>
                         </div>
                         <div class="card-footer">
@@ -506,7 +508,7 @@
                         <div class="media-container-row">
                             <div class="col-md-12">
                                 <div class="wrap-img ">
-                                    <a href="https://www.raspberrypi.org/"><img src="assets/images/raspi-300x267.png" class="img-responsive clients-img" alt="" title=""></a>
+                                    <a href="https://www.raspberrypi.org/"><img src="{% static "assets/images/raspi-300x267.png" %}" class="img-responsive clients-img" alt="Raspberry Pi&#39;s Logo" title=""></a>
                                 </div>
                             </div>
                         </div>
@@ -514,7 +516,7 @@
                         <div class="media-container-row">
                             <div class="col-md-12">
                                 <div class="wrap-img ">
-                                    <a href="https://www.adafruit.com" target="_blank"><img src="assets/images/adafruit-logo-small-100x100.png" class="img-responsive clients-img" alt="" title=""></a>
+                                    <a href="https://www.adafruit.com" target="_blank"><img src="{% static "assets/images/adafruit-logo-small-100x100.png" %}" class="img-responsive clients-img" alt="Adafruit&#39;s Logo" title=""></a>
                                 </div>
                             </div>
                         </div>
@@ -522,7 +524,7 @@
                         <div class="media-container-row">
                             <div class="col-md-12">
                                 <div class="wrap-img ">
-                                    <a href="https://www.arduino.cc/" target="_blank"><img src="assets/images/arduino-logo-900x900.png" class="img-responsive clients-img" alt="" title=""></a>
+                                    <a href="https://www.arduino.cc/" target="_blank"><img src="{% static "assets/images/arduino-logo-900x900.png" %}" class="img-responsive clients-img" alt="Ardunio&#39;s Logo" title=""></a>
                                 </div>
                             </div>
                         </div>
@@ -530,7 +532,7 @@
                         <div class="media-container-row">
                             <div class="col-md-12">
                                 <div class="wrap-img ">
-                                    <a href="https://www.swapp.solutions" target="_blank"><img src="assets/images/swapp-tech-llc-logo-large-300x310.png" class="img-responsive clients-img" alt="" title=""></a>
+                                    <a href="https://www.swapp.solutions" target="_blank"><img src="{% static "assets/images/swapp-tech-llc-logo-large-300x310.png" %}" class="img-responsive clients-img" alt="Swapp Techonologies LLC Logo" title="Swapp Techonologies LLC Logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -538,7 +540,7 @@
                         <div class="media-container-row">
                             <div class="col-md-12">
                                 <div class="wrap-img ">
-                                    <a href="https://www.hawkcyber.com"><img src="assets/images/hawk-cyber-logo-artboard-4-2000x1551.png" class="img-responsive clients-img" alt="" title=""></a>
+                                    <a href="https://www.hawkcyber.com"><img src="{% static "assets/images/hawk-cyber-logo-artboard-4-2000x1551.png" %}" class="img-responsive clients-img" alt="Hawk Cyber LLC&#39;s Logo" title="Hawk Cyber LLC&#39;s Logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -546,7 +548,7 @@
                         <div class="media-container-row">
                             <div class="col-md-12">
                                 <div class="wrap-img ">
-                                    <a href="https://www.ghielectronics.com/" target="_blank"><img src="assets/images/ghi-electronics-280x280.png" class="img-responsive clients-img" alt="" title=""></a>
+                                    <a href="https://www.ghielectronics.com/" target="_blank"><img src="{% static "assets/images/ghi-electronics-280x280.png" %}" class="img-responsive clients-img" alt="GHI Electronics Logo" title="GHI Electronics Logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -572,7 +574,7 @@
               <div class="col-12 col-md-6 col-lg-3">
                   <div class="media-wrap align-left">
                       <a href="https://hola-there.github.io/manowar_website/">
-                          <img src="assets/images/ptrident.svg" alt="Mobirise" title="">
+                          <img src="{% static "assets/images/ptrident.svg" %}" alt="Poseidon&#39;s Tridents Logo" title="Poseidon&#39;s Tridents Logo">
                       </a>
                   </div>
                   <p class="mbr-text align-left text1 mbr-fonts-style display-4">Poseidon's Tridents<br><br>We built this project @ HackUMBC Fall 2019. We cut &amp; drilled pvc pipes, soldered some connections, designed a website, and more all on Sep. 28th-29th&nbsp;<br></p>
@@ -609,21 +611,22 @@
       </div>
     </section>
     {% endblock %}
-    <script src="assets/web/assets/jquery/jquery.min.js"></script>
-    <script src="assets/tether/tether.min.js"></script>
-    <script src="assets/popper/popper.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/mbr-clients-slider/mbr-clients-slider.js"></script>
-    <script src="assets/formstyler/jquery.formstyler.js"></script>
-    <script src="assets/formstyler/jquery.formstyler.min.js"></script>
-    <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-    <script src="assets/dropdown/js/nav-dropdown.js"></script>
-    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-    <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/playervimeo/vimeo_player.js"></script>
-    <script src="assets/parallax/jarallax.min.js"></script>
-    <script src="assets/theme/js/script.js"></script>
-    <script src="assets/formoid/formoid.min.js"></script>
+    <script src="{% static "assets/web/assets/jquery/jquery.min.js" %}"></script>
+    <script src="{% static "assets/tether/tether.min.js" %}"></script>
+    <script src="{% static "assets/popper/popper.min.js" %}"></script>
+    <script src="{% static "assets/bootstrap/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "assets/mbr-clients-slider/mbr-clients-slider.js" %}"></script>
+    <script src="{% static "assets/formstyler/jquery.formstyler.js" %}"></script>
+    <script src="{% static "assets/formstyler/jquery.formstyler.min.js" %}"></script>
+    <script src="{% static "assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js" %}"></script>
+    <script src="{% static "assets/dropdown/js/nav-dropdown.js" %}"></script>
+    <script src="{% static "assets/dropdown/js/navbar-dropdown.js" %}"></script>
+    <script src="{% static "assets/touchswipe/jquery.touch-swipe.min.js" %}"></script>
+    <script src="{% static "assets/smoothscroll/smooth-scroll.js" %}"></script>
+    <script src="{% static "assets/playervimeo/vimeo_player.js" %}"></script>
+    <script src="{% static "assets/parallax/jarallax.min.js" %}"></script>
+    <script src="{% static "assets/theme/js/script.js" %}"></script>
+    <script src="{% static "assets/formoid/formoid.min.js" %}"></script>
+    {% block script_additions %}{% endblock %}
   </body>
 </html>

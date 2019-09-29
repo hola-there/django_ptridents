@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e79ff4e-3455-456e-aef0-1b1eb0c071e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ptrident_site/ptrident_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptrident_site/ptrident_site/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptrident_site/ptrident_site/static/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ptrident_site/ptrident_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptrident_site/ptrident_site/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ptrident_site/trident_reader/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptrident_site/trident_reader/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
