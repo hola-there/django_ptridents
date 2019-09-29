@@ -1,0 +1,8 @@
+# Credential Storage #
+######################
+settings.ini
+
+
+# Logs and databases #
+######################
+*.log
